@@ -1,0 +1,74 @@
+* Como está para já:
+** c/ substituição das palavras pouco frequentes
+** 9 < len(seq) < 2200. 98.38% dos relatórios
+
+* Resultados no dados de teste
+** Normal
+| Model                             | Precision | Recall |    F1 |
+|-----------------------------------+-----------+--------+-------|
+| fastText                          |     66.33 |   8.39 | 14.90 |
+| fastText + Categorias (v1 antigo) |     66.41 |   8.32 | 14.78 |
+| fastText + Categorias (v1)        |     67.94 |  12.68 | 21.37 |
+| fastText + Categorias (v2)        |     68.09 |  12.21 |  20.7 |
+| CNN                               |     75.16 |  26.70 | 39.40 |
+| CNN + Categorias (v1 antigo)      |     74.93 |  26.22 | 38.84 |
+| CNN + Categorias (v1)             |     72.34 |  20.87 | 32.39 |
+| CNN + Categorias (v2)             |     72.92 |  20.02 | 31.41 |
+
+** Rollup
+| Model                      | Precision | Recall |    F1 |
+|----------------------------+-----------+--------+-------|
+| fastText                   |     76.04 |  18.72 | 30.04 |
+| fastText + Categorias (v1) |     73.94 |  24.51 | 36.81 |
+| fastText + Categorias (v2) |     73.94 |  24.51 | 36.81 |
+| CNN                        |     77.99 |  35.83 | 49.10 |
+| CNN + Categorias (v1)      |     74.96 |  29.70 | 42.54 |
+| CNN + Categorias (v2)      |     76.26 |  28.64 | 41.64 |
+
+* Categorias das notas
+['ECG', 'Nutrition', 'Radiology', 'Nursing', 'Discharge summary',
+'Rehab Services', 'Consult', 'Echo', 'Physician ', 'General',
+'Respiratory ', 'Social Work', 'Nursing/other', 'Pharmacy', 'Case
+Management ']
+
+* Dados TODOS
+Average regular labels per report: 17.0011152416
+Average rolled labels per report: 15.4003569758
+Unique tokens *before* preprocessing: 162784
+Unique tokens *after* preprocessing: 53229
+Shortest sequence has 10 tokens
+Longest sequences has 2199 tokens
+Average tokens per sequence: 309.056418174
+Texts shape: (399623, 2199)
+Regular labels shape: (399623, 4006)
+Rolled labels shape: (399623, 779)
+
+* Fazer
+** DONE Limite mínimo - histograma de 20 em 20 do comprimento
+** DONE Comprimento dos 90%-95-99
+** DONE Labels se atribuidos não são retirados (por paciente). Se desapareec.
+*** São mantidas as doenças crónicas
+** DONE Em que visita é atribuído o 1ª diag de diabetes (por visita)
+*** Não tem que ser na 1ª
+*** Média 1.5 hadm
+** DONE Separação (train, val, test)
+** DONE Rollup normal
+** DONE Escrever relatórios por categoria
+** DONE Escrever labels mais comuns, por categoria e no geral
+** DONE Classificadores binários para por ex as 10 labels mais comuns
+** DONE BoT w/ Categories (2) e CNN w/ Categories (2)
+** TODO Escrever comprimento em tokens por categoria
+** TODO Durações, há mais pessoas a utilizar a máquina
+** TODO Outra vez com o cross-validation
+** TODO 0, 1, 2, 3 Dense
+** TODO Conv1D de 2, 3 e 4 em paralelo
+** TODO Multi-label vs binário
+** TODO Binário dos 10 mais comuns excluíndo o 250
+
+* Para o "Discharge summary"
+** 73886 unique tokens
+** Texts shape: (15582, 900)
+** Labels shape: (15582, 3992)
+** Em média 17 labels por relatório
+** Em média 1753 tokens por relatório
+

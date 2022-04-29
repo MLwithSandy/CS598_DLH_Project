@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -eu
+
+idxs='21 60 18 16 3 70 0 22 4'
+
+for idx in $idxs; do
+  python cnn_binary_categories.py $idx
+done

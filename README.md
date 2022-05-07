@@ -6,7 +6,7 @@ We have created python notebooks for each process. You can directly start runnin
 
 ## Training code
 
-To run the preprocessing modules, run following steps in sequentially:
+To run the preprocessing modules, run following steps sequentially:
 
 ```eval
 Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for preprocessing of ICD-9 Diagnosis code.

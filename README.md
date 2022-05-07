@@ -137,21 +137,21 @@ These are the trained models created as part of this project.
 
 These models are replicated with same architecture and hyperparameters as per the original paper.
 
-1. Bag of tricks(BOT) Rolled ICM code outputs: Link
-2. Bag of tricks(BOT) Regular ICM code outputs: Link
-3. Convolutional Neural Network(CNNBaseline) Rolled ICM code outputs: Link
-4. Convolutional Neural Network(CNNBaseline) Regular ICM code outputs: Link
-5. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Rolled ICM code outputs: Link
-6. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Regular ICM code outputs: Link
+1. Bag of tricks(BOT) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+2. Bag of tricks(BOT) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+3. Convolutional Neural Network(CNNBaseline) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+4. Convolutional Neural Network(CNNBaseline) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+5. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+6. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
 
-The below models are customer modifications made on top of the architectures provided in the original paper
+The below models are custom modifications (trainable initial weights) made on top of the architectures provided in the original paper
 
-1. Bag of tricks(BOT) Rolled ICM code outputs: Link
-2. Bag of tricks(BOT) Regular ICM code outputs: Link
-3. Convolutional Neural Network(CNNBaseline) Rolled ICM code outputs: Link
-4. Convolutional Neural Network(CNNBaseline) Regular ICM code outputs: Link
-5. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Rolled ICM code outputs: Link
-6. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Regular ICM code outputs: Link
+1. Bag of tricks(BOT) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+2. Bag of tricks(BOT) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+3. Convolutional Neural Network(CNNBaseline) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+4. Convolutional Neural Network(CNNBaseline) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+5. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Rolled ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
+6. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
 
 ## Results
 

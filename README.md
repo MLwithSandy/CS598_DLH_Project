@@ -106,6 +106,11 @@ To evaluate the trained models, run:
 ```eval
 Open the python notebook: evaluation.ipynb and run all cells.
 Please make sure the pretrained models are loaded from correct paths.
+
+Data folder: All the data is read and written to data folder, set using variable 'DATA_PATH'.
+
+Models folder: Trained models from original paper are stored in folder, set with variable 'MODEL_ORIG_PATH' and trained models for ablation is stored in folder, set with variable 'MODEL_PATH'.
+
 ```
 
 ## Pre-trained models

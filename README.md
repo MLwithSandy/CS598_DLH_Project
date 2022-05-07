@@ -1,5 +1,5 @@
 # CS598_DLH_Project
-
+------
 ## Specification of dependencies
 
 We have created python notebooks for each process. You can directly start running the notebook.
@@ -25,6 +25,8 @@ torch.nn.utils.rnn
 tensorflow.keras.preprocessing.sequence
 random
 ```
+
+-------
 
 ## Training code
 
@@ -116,7 +118,7 @@ where the outputs are Regular ICM codes.
 These models are custom models trained on top of original paper models.
 Please make sure the dataset is loaded from correct paths.
 ```
-
+-------
 ## Evaluation code
 
 To evaluate the trained models, run:
@@ -130,7 +132,7 @@ Please make sure the pretrained models are loaded from correct paths.
   Models folder: Trained models from original paper are stored in folder, set with variable 'MODEL_ORIG_PATH' and trained models for ablation is stored in folder, set with variable 'MODEL_PATH'.
 
 ```
-
+-------
 ## Pre-trained models
 
 These are the trained models created as part of this project.
@@ -154,7 +156,7 @@ The below models are custom modifications (trainable initial weights) made on to
 6. Convolutional Neural Network - 3 Layer Architecture(CNN3Layer) Regular ICM code outputs: [Link](https://drive.google.com/file/d/15Bcu1d5Ic5dgPRn7yg8Bh-2oen6gh79B/view?usp=sharing)
 
 ## Results
-
+------
 ### Results with same parameters as per the original paper
 
 | Preprocessing                  | Reprod. | Original |

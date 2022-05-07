@@ -9,7 +9,7 @@ We have created python notebooks for each process. You can directly start runnin
 To run the preprocessing modules, run following steps sequentially:
 
 ```eval
-Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for preprocessing of ICD-9 Diagnosis code.
+1. Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for preprocessing of ICD-9 Diagnosis code.
 
   Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
@@ -24,7 +24,7 @@ Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for p
   - "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
   - "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
 
-Open the python notebook: notes_preproces.ipynb and run all cells for preprocessing of notes text.
+2. Open the python notebook: notes_preproces.ipynb and run all cells for preprocessing of notes text.
 
   Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
@@ -40,7 +40,7 @@ Open the python notebook: notes_preproces.ipynb and run all cells for preprocess
   - "word_token_map.p": File containing mapping of infrequent words to frequent words with least Levestein distance
   - "notes_final.gz": preprocessed and tokenized notes data
 
-Open the python notebook: word_embedding.ipynb and run all cells for generating word embeddings and preparing dataset for training and testing of models.
+3. Open the python notebook: word_embedding.ipynb and run all cells for generating word embeddings and preparing dataset for training and testing of models.
 
   Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
@@ -66,21 +66,21 @@ Open the python notebook: word_embedding.ipynb and run all cells for generating 
 To run the trained models, run:
 
 ```eval
-Open the python notebook: RolledDataModel.ipynb and run all cells.
+1. Open the python notebook: RolledDataModel.ipynb and run all cells.
 This file contains 3 models for training: BagOfTricks, CNNBaseline and CNN LayerArchitecture
 where the outputs are Rolled ICM codes.
 Please make sure the dataset is loaded from correct paths.
 ```
 
 ```eval
-Open the python notebook: RegularDataModel.ipynb and run all cells.
+2. Open the python notebook: RegularDataModel.ipynb and run all cells.
 This file contains 3 models for training: BagOfTricks, CNNBaseline and CNN LayerArchitecture
 where the outputs are Regular ICM codes.
 Please make sure the dataset is loaded from correct paths.
 ```
 
 ```eval
-Open the python notebook: CustomRolledDataModel.ipynb and run all cells.
+3. Open the python notebook: CustomRolledDataModel.ipynb and run all cells.
 This file contains 3 models for training: BagOfTricks, CNNBaseline and CNN LayerArchitecture
 where the outputs are Rolled ICM codes.
 These models are custom models trained on top of original paper models.
@@ -88,7 +88,7 @@ Please make sure the dataset is loaded from correct paths.
 ```
 
 ```eval
-Open the python notebook: CustomRegularDataModel.ipynb and run all cells.
+4. Open the python notebook: CustomRegularDataModel.ipynb and run all cells.
 This file contains 3 models for training: BagOfTricks, CNNBaseline and CNN LayerArchitecture
 where the outputs are Regular ICM codes.
 These models are custom models trained on top of original paper models.
@@ -100,12 +100,12 @@ Please make sure the dataset is loaded from correct paths.
 To evaluate the trained models, run:
 
 ```eval
-Open the python notebook: evaluation.ipynb and run all cells.
+1. Open the python notebook: evaluation.ipynb and run all cells.
 Please make sure the pretrained models are loaded from correct paths.
 
-Data folder: All the data is read and written to data folder, set using variable 'DATA_PATH'.
+  Data folder: All the data is read and written to data folder, set using variable 'DATA_PATH'.
 
-Models folder: Trained models from original paper are stored in folder, set with variable 'MODEL_ORIG_PATH' and trained models for ablation is stored in folder, set with variable 'MODEL_PATH'.
+  Models folder: Trained models from original paper are stored in folder, set with variable 'MODEL_ORIG_PATH' and trained models for ablation is stored in folder, set with variable 'MODEL_PATH'.
 
 ```
 

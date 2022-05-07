@@ -11,60 +11,60 @@ To run the preprocessing modules, run following steps sequentially:
 ```eval
 Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for preprocessing of ICD-9 Diagnosis code.
 
-Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
+  Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
-Input files:
+  Input files:
 
-- "DIAGNOSES_ICD.csv.gz": MIMIC III dataset  with list of ICD-9 codes
+  - "DIAGNOSES_ICD.csv.gz": MIMIC III dataset  with list of ICD-9 codes
 
-Output files:
-- "diag_icd9_unique_list.p": List of unique regular ICD-9-CM codes
-- "diag_icd9_rolled_unique_list.p": List of unique rolled up ICD-9-CM codes
-- "diag_icd9.csv.gz": processed regular ICD-9 codes together with k-hot representation
-- "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
-- "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
+  Output files:
+  - "diag_icd9_unique_list.p": List of unique regular ICD-9-CM codes
+  - "diag_icd9_rolled_unique_list.p": List of unique rolled up ICD-9-CM codes
+  - "diag_icd9.csv.gz": processed regular ICD-9 codes together with k-hot representation
+  - "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
+  - "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
 ```
 
 ```eval
 Open the python notebook: notes_preproces.ipynb and run all cells for preprocessing of notes text.
 
-Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
+  Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
-Input files:
+  Input files:
 
-- "NOTEEVENTS.csv.gz": MIMIC III dataset with notes text
-- "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
+  - "NOTEEVENTS.csv.gz": MIMIC III dataset with notes text
+  - "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
 
-Output files:
+  Output files:
 
-- "wordCorpus.p": List of words and their frequencies
-- "notes_tokens_list.p": List of words with frequency more than 5 -> frequent words list
-- "word_token_map.p": File containing mapping of infrequent words to frequent words with least Levestein distance
-- "notes_final.gz": preprocessed and tokenized notes data
+  - "wordCorpus.p": List of words and their frequencies
+  - "notes_tokens_list.p": List of words with frequency more than 5 -> frequent words list
+  - "word_token_map.p": File containing mapping of infrequent words to frequent words with least Levestein distance
+  - "notes_final.gz": preprocessed and tokenized notes data
 ```
 
 ```eval
 Open the python notebook: word_embedding.ipynb and run all cells for generating word embeddings and preparing dataset for training and testing of models.
 
-Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
+  Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
 
-Input files:
+  Input files:
 
-- "diag_icd9_unique_list.p": List of unique regular ICD-9-CM codes
-- "diag_icd9_rolled_unique_list.p": List of unique rolled up ICD-9-CM codes
-- "diag_icd9.csv.gz": processed regular ICD-9 codes together with k-hot representation
-- "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
-- "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
-- "notes_tokens_list.p": List of words with frequency more than 5 -> frequent words list
-- "notes_final.gz": preprocessed and tokenized notes data
+  - "diag_icd9_unique_list.p": List of unique regular ICD-9-CM codes
+  - "diag_icd9_rolled_unique_list.p": List of unique rolled up ICD-9-CM codes
+  - "diag_icd9.csv.gz": processed regular ICD-9 codes together with k-hot representation
+  - "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
+  - "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
+  - "notes_tokens_list.p": List of words with frequency more than 5 -> frequent words list
+  - "notes_final.gz": preprocessed and tokenized notes data
 
-Output files:
+  Output files:
 
-- "word2vec_model.model": Word2Vec model
-- "word2vec.vec": Vectors from Word2Vec model
-- "row_index_dictionary.p": word index from trained Word2Vec model
-- "embedding_matrix.p": embedding matrix from trained Word2Vec model
-- "data.npz": Final dataset for training and testing of models, containing data and labels
+  - "word2vec_model.model": Word2Vec model
+  - "word2vec.vec": Vectors from Word2Vec model
+  - "row_index_dictionary.p": word index from trained Word2Vec model
+  - "embedding_matrix.p": embedding matrix from trained Word2Vec model
+  - "data.npz": Final dataset for training and testing of models, containing data and labels
 ```
 
 To run the trained models, run:

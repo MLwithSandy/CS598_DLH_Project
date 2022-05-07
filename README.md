@@ -3,6 +3,28 @@
 ## Specification of dependencies
 
 We have created python notebooks for each process. You can directly start running the notebook.
+List of dependecies:
+
+```eval
+google.colab
+os
+gzip
+pickle
+gc
+numpy
+pandas
+sklearn.preprocessing
+sklearn.metrics
+tensorflow.keras.models
+string
+Levenshtein
+collections
+gensim.models.word2vec
+torch
+torch.nn.utils.rnn
+tensorflow.keras.preprocessing.sequence
+random
+```
 
 ## Training code
 

@@ -23,9 +23,7 @@ Open the python notebook: diagonsis_icd_preprocess.ipynb and run all cells for p
   - "diag_icd9.csv.gz": processed regular ICD-9 codes together with k-hot representation
   - "diag_icd9_rolled.csv.gz":  processed rolled ICD-9 codes together with k-hot representation
   - "diag_diabetes_hadm_ids.p": list of admission ids for which the patiant has been diagnosed with diabetes
-```
 
-```eval
 Open the python notebook: notes_preproces.ipynb and run all cells for preprocessing of notes text.
 
   Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.
@@ -41,9 +39,7 @@ Open the python notebook: notes_preproces.ipynb and run all cells for preprocess
   - "notes_tokens_list.p": List of words with frequency more than 5 -> frequent words list
   - "word_token_map.p": File containing mapping of infrequent words to frequent words with least Levestein distance
   - "notes_final.gz": preprocessed and tokenized notes data
-```
 
-```eval
 Open the python notebook: word_embedding.ipynb and run all cells for generating word embeddings and preparing dataset for training and testing of models.
 
   Data folder: All the data is read and written to data folder, set using variable 'DATA_DIR'.

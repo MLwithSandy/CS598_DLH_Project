@@ -137,11 +137,11 @@ The below models are customer modifications made on top of the architectures pro
 
 | Preprocessing                  | Reprod. | Original |
 | ------------------------------ | ------- | -------- |
-| Num. of used records           | 399629  | 399623   |
+| Num. of used records           | 399623  | 399623   |
 | Num. of regular labels         | 4103    | 4006     |
 | Num. of rolled up labels       | 781     | 779      |
-| Num. of unique tokens          | 53304   | 53229    |
-| Avg. num. of tokens per report | 309.62  | 309.06   |
+| Num. of unique tokens          | 53229   | 53229    |
+| Avg. num. of tokens per report | 309.06  | 309.06   |
 
 ###Listed below is the comparison of Precision, Recall and F1 Score from original paper and our implementation(reproduction) of BoT and CNN Baseline model.
 

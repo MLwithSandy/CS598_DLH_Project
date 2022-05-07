@@ -155,7 +155,7 @@ The below models are custom modifications (trainable initial weights) made on to
 
 ## Results
 
-###Results with same parameters as per the original paper
+### Results with same parameters as per the original paper
 
 | Preprocessing                  | Reprod. | Original |
 | ------------------------------ | ------- | -------- |
@@ -165,7 +165,7 @@ The below models are custom modifications (trainable initial weights) made on to
 | Num. of unique tokens          | 53229   | 53229    |
 | Avg. num. of tokens per report | 309.06  | 309.06   |
 
-###Listed below is the comparison of Precision, Recall and F1 Score from original paper and our implementation(reproduction) of BoT and CNN Baseline model.
+### Listed below is the comparison of Precision, Recall and F1 Score from original paper and our implementation(reproduction) of BoT and CNN Baseline model.
 
 | Model name                                   | Reprod.             | Original            |
 | -------------------------------------------- | ------------------- | ------------------- |
